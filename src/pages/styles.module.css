@@ -15,6 +15,10 @@
   .heroBanner {
     padding: 2rem;
   }
+
+  .heroBanner img {
+    display: none;
+  }
 }
 
 .heroBanner img {
