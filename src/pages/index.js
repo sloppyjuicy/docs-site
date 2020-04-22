@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import useLogo from '@theme/hooks/useLogo';
+import useTheme from '@theme/hooks/useTheme';
 
 const intro = (
   <>
@@ -16,9 +16,14 @@ const intro = (
 );
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  const {logoImageUrl, logoAlt} = useLogo();
+  const {
+    siteConfig: {baseUrl, themeConfig: {navbar: {logo = {}} = {}}} = {},
+  } = useDocusaurusContext();
+  const {isDarkTheme} = useTheme();
+  // FIXME direct use of useLogo does not appear to connect with appropriate
+  // state - unsure of why.
+  const logoImageUrl = isDarkTheme ? logo.srcDark : logo.src;
+
   return (
     <Layout
       title="Technical Docs"
@@ -26,7 +31,7 @@ function Home() {
       <main className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1>
-            <img className="hero__title" src={logoImageUrl} alt={logoAlt} />
+            <img className="hero__title" src={logoImageUrl} alt="PlaceOS" />
           </h1>
           <p className="hero__subtitle">{intro}</p>
           <div className={styles.buttons}>
