@@ -6,6 +6,7 @@ module.exports = {
   organizationName: 'placeos',
   projectName: 'docs',
   themeConfig: {
+    defaultDarkMode: true,
     image: 'img/meta.png',
     announcementBar: {
       id: 'wip',
