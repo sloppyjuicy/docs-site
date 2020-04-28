@@ -24,6 +24,16 @@ const things = [
   "you",
 ];
 
+const thing = (
+  <>
+    <TextLoop
+      className="text--primary"
+      children={shuffle(things)}
+      interval={2000}
+    />
+  </>
+);
+
 function Home() {
   return (
     <Layout
@@ -31,12 +41,7 @@ function Home() {
       <main className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">
-            {placeos} is a platform for creating digital experiences for&nbsp;
-            <TextLoop
-              className="text--primary"
-              children={shuffle(things)}
-              interval={2000}
-            />.
+            {placeos} is a platform for creating digital experiences for {thing}
           </h1>
           <div className={styles.buttons}>
             <Link
