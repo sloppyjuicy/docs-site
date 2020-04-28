@@ -16,13 +16,9 @@
     padding: 2rem;
   }
 
-  .heroBanner img {
-    display: none;
+  h1 {
+    font-size: 2.2rem !important;
   }
-}
-
-.heroBanner img {
-  width: 200px;
 }
 
 .buttons {

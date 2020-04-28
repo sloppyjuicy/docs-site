@@ -17,27 +17,15 @@ module.exports = {
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: 'PlaceOS Logo',
+        alt: 'PlaceOS',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
       },
       links: [
         {
           to: 'docs/doc1',
-          activeBasePath: 'guides',
-          label: 'Guides',
-          position: 'left',
-          items: [
-            { label: 'Getting Started', href: '' },
-            { label: 'Develop', href: '' },
-            { label: 'Deploy', href: '' },
-            { label: 'Backoffice', href: '' },
-          ],
-        },
-        {
-          to: 'docs/doc1',
-          activeBasePath: 'api',
-          label: 'API',
+          activeBasePath: 'docs',
+          label: 'Documentation',
           position: 'left',
         },
         {
@@ -47,9 +35,10 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/placeos',
-          label: 'GitHub',
-          position: 'right',
+          to: 'contact',
+          activeBasePath: 'contact',
+          label: 'Contact',
+          position: 'left',
         },
       ],
     },

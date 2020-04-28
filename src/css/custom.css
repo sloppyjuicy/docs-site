@@ -10,6 +10,7 @@
   --ifm-color-primary: #c92366;
   --ifm-color-secondary: #5c64ff;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
 }
 
 html[data-theme='dark'] {
