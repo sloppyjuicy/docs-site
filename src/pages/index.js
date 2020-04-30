@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -34,6 +34,16 @@ function IntroText() {
 }
 
 function Home() {
+  // Hide the right nav items (search, theme selection etc) to reduce noise.
+  useEffect(() => {
+    let rightNav = document.getElementsByClassName('navbar__items--right')[0];
+    let originalStyle = rightNav.style.getPropertyValue('display');
+    rightNav.style.setProperty('display', 'none');
+    return () => {
+      rightNav.style.setProperty('display', originalStyle);
+    }
+  });
+
   return (
     <Layout
       description="A software stack for buildings.">
