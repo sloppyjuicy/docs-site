@@ -16,6 +16,7 @@
 :root {
   --ifm-color-primary: #c92366;
   --ifm-color-secondary: #5c64ff;
+  --ifm-heading-color: #0a0d2e;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Roboto', sans-serif;
@@ -30,7 +31,7 @@
 html[data-theme='dark'] {
   --ifm-background-color: #0a0d2e;
   --ifm-background-surface-color: #0a0d2e;
-
+  --ifm-heading-color: inherit;
   --img-overlay-colour: rgba(10, 13, 46, 0.95)
 }
 
