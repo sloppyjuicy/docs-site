@@ -3,36 +3,35 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlaceOS from '../components/placeos'
 import TextLoop from 'react-text-loop';
 import styles from './styles.module.css';
 import {shuffle} from 'lodash';
 
-const placeos = (
-  <>
-    <strong>Place<span className="text--primary">OS</span></strong>
-  </>
-);
-
-const things = [
-  "spaces",
-  "hospitals",
-  "workplaces",
-  "universities",
-  "buildings",
-  "precints",
-  "cities",
-  "you",
-];
-
-const thing = (
-  <>
+function IntroText() {
+  let things = [
+    "spaces",
+    "hospitals",
+    "workplaces",
+    "universities",
+    "buildings",
+    "precints",
+    "cities",
+    "you",
+  ];
+  let thing = (
     <TextLoop
       className="text--primary"
       children={shuffle(things)}
       interval={2000}
     />
-  </>
-);
+  );
+  return (
+    <>
+      <PlaceOS /> is a platform for creating digital experiences for {thing}
+    </>
+  );
+}
 
 function Home() {
   return (
@@ -41,7 +40,7 @@ function Home() {
       <main className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">
-            {placeos} is a platform for creating digital experiences for {thing}
+            <IntroText />
           </h1>
           <div className={styles.buttons}>
             <Link
