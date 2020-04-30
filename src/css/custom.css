@@ -6,11 +6,20 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@font-face {
+  font-family: 'Young';
+  src: url('/fonts/young.woff2') format('woff2'),
+       url('/fonts/young.woff') format('woff');
+}
+
 :root {
   --ifm-color-primary: #c92366;
   --ifm-color-secondary: #5c64ff;
+
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  --ifm-font-family-base: 'Roboto', sans-serif;
+  --ifm-heading-font-weight: 400;
 }
 
 html[data-theme='dark'] {
@@ -18,9 +27,6 @@ html[data-theme='dark'] {
   --ifm-background-surface-color: #0a0d2e;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Young', 'Roboto', sans-serif;
 }
