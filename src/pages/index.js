@@ -38,7 +38,7 @@ function Home() {
     <Layout
       description="A software stack for buildings.">
       <main className={classnames('hero', styles.heroBanner)}>
-        <div className="container">
+        <div className='container'>
           <h1 className="hero__title">
             <IntroText />
           </h1>

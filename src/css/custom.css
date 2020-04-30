@@ -20,13 +20,20 @@
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Roboto', sans-serif;
   --ifm-heading-font-weight: 400;
+
+  --ifm-global-radius: 0;
+
+  --img-overlay-colour: rgba(255, 255, 255, 0.95);
+  --img-overlay: linear-gradient(0deg, var(--img-overlay-colour), var(--img-overlay-colour));
 }
 
 html[data-theme='dark'] {
   --ifm-background-color: #0a0d2e;
   --ifm-background-surface-color: #0a0d2e;
+
+  --img-overlay-colour: rgba(10, 13, 46, 0.95)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .navbar, .button {
   font-family: 'Young', 'Roboto', sans-serif;
 }
