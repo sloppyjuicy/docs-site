@@ -44,10 +44,19 @@ function Home() {
     }
   });
 
+  // Backgrond images should be in img/bg/ and name 1.jpg, 2.jpg etc
+  let randBg = () => {
+    let count = 18;
+    let idx = Math.ceil(Math.random() * count);
+    return `img/bg/${idx}.jpg`
+  }
+
   return (
     <Layout
       description="A software stack for buildings.">
-      <main className={classnames('hero', styles.heroBanner)}>
+      <main
+        className={classnames('hero', styles.heroBanner)}
+        style={{'--bg-image': `url('${randBg()}')`}} >
         <div className='container'>
           <h1 className="hero__title">
             <IntroText />

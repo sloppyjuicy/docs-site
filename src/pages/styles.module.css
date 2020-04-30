@@ -11,7 +11,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: var(--img-overlay), url('/img/bg.jpg');
+  background-image: var(--img-overlay), var(--bg-image);
 }
 
 @media screen and (max-width: 966px) {
