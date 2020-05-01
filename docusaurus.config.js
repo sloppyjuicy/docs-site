@@ -46,46 +46,75 @@ module.exports = {
       style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Getting Started',
+              to: 'docs/getting-started',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Deployment',
+              to: 'docs/deployment',
+            },
+            {
+              label: 'Building Drivers',
+              to: 'docs/drivers',
+            },
+            {
+              label: 'Backoffice',
+              to: 'docs/backoffice',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Partner',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Find a partner',
+              to: 'partners',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
+              label: 'Become a partner',
+              to: 'partner-program',
+            }
           ],
         },
         {
-          title: 'Social',
+          title: 'Follow',
           items: [
             {
               label: 'Blog',
               to: 'blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Podcast',
+              to: 'blog',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Newsletter',
+              to: 'newsletter',
             },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/placeos/',
+            },
+          ],
+        },
+        {
+          title: 'About',
+          items: [
+            {
+              label: 'Company',
+              to: 'company'
+            },
+            {
+              label: 'Careers',
+              to: 'join-us',
+            },
+            {
+              label: 'Contact',
+              to: 'contact',
+            }
           ],
         },
       ],
