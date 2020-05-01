@@ -6,12 +6,10 @@ function ReportIssue({title, body, children}) {
   const {siteConfig = {}} = context;
   const {organizationName, projectName} = siteConfig;
 
-  const url = new URL(`https://github.com/${organizationName}/${projectName}/issues/new`);
-  title && url.searchParams.append('title', title);
-  body && url.searchParams.append('body', body);
+  const url = `https://github.com/${organizationName}/${projectName}/issues/new?title=${title || ''}&body=${body || ''}`;
 
   return (
-    <a href={url.href} target="_blank">
+    <a href={url} target="_blank">
       {children}
     </a>
   );

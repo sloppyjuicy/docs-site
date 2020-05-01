@@ -3,7 +3,7 @@ module.exports = {
   url: 'https://place.technology',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'placeos',
+  organizationName: 'place-technology',
   projectName: 'website',
   themeConfig: {
     defaultDarkMode: true,
