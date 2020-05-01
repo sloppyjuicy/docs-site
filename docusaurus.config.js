@@ -1,10 +1,10 @@
 module.exports = {
   title: 'PlaceOS',
-  url: 'https://docs.place.technology',
+  url: 'https://place.technology',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'placeos',
-  projectName: 'docs',
+  projectName: 'website',
   themeConfig: {
     defaultDarkMode: true,
     image: 'img/meta.png',
@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Podcast',
-              to: 'blog',
+              to: 'podcast',
             },
             {
               label: 'Newsletter',
