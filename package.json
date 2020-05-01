@@ -2,6 +2,9 @@
   "name": "website",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
