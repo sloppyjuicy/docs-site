@@ -29,9 +29,21 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/doc1',
+          to: 'drivers',
           activeBasePath: 'drivers',
           label: 'Drivers',
+          position: 'left',
+        },
+        {
+          to: 'blog',
+          activeBasePath: 'blog',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
+          to: 'podcast',
+          activeBasePath: 'podcast',
+          label: 'Podcast',
           position: 'left',
         },
         {
