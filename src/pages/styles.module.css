@@ -4,7 +4,7 @@
  * and scoped locally.
  */
 .heroBanner {
-  height: 100vh;
+  height: var(--full-height);
   padding: 12rem 0;
   text-align: center;
   position: relative;

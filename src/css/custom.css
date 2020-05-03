@@ -14,6 +14,8 @@
 }
 
 :root {
+  --full-height: calc(100vh - var(--ifm-navbar-height));
+
   --ifm-color-primary: #c92366;
   --ifm-color-secondary: #5c64ff;
   --ifm-heading-color: #0a0d2e;
