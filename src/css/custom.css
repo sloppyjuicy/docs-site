@@ -17,8 +17,13 @@
   --full-height: calc(100vh - var(--ifm-navbar-height));
 
   --ifm-color-primary: #c92366;
+  --ifm-color-primary-dark: #a61e5b;
+
   --ifm-color-secondary: #5c64ff;
+  --ifm-color-secondary-dark: #545aca;
+
   --ifm-heading-color: #0a0d2e;
+  --ifm-button-color: #fff;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Roboto', sans-serif;
@@ -40,3 +45,12 @@ html[data-theme='dark'] {
 h1, h2, h3, h4, h5, h6, .navbar, .button {
   font-family: 'Young', 'Roboto', sans-serif;
 }
+
+.button.button--primary {
+  &:not(.button--outline) {
+    &:hover {
+      color: #fffef8;
+    }
+  }
+}
+
