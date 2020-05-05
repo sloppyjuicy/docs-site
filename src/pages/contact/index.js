@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import classnames from 'classnames';
 import styles from './styles.module.css';
-import OfficeMap from '../../components/OfficeMap';
+import OfficeMap from '@site/src/components/OfficeMap';
 
 function SupportCard() {
   return (

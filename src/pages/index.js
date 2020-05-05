@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import PlaceOS from '../components/PlaceOS';
+import PlaceOS from '@site/src/components/PlaceOS';
 import TextLoop from 'react-text-loop';
 import styles from './styles.module.css';
 import {shuffle} from 'lodash';
