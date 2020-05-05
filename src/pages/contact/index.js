@@ -38,7 +38,7 @@ function Contact() {
     <Layout title="Contact">
       <div className="container padding-vert--lg">
         <header>
-          <h1 className="pageTitle">Let's chat.</h1>
+          <h1 className="pageTitle">Let's chat</h1>
         </header>
         <main>
           <div className="row">
