@@ -13,7 +13,8 @@ function NotFound() {
             <p>It looks like the thing you are looking for, is not.</p>
             <p>
               We have recently shuffled a few things around so if you have
-              landed here from a link, please do <ReportIssue title="Broken link...">let us know</ReportIssue>.
+              landed here from a link, please do{' '}
+              <ReportIssue title="Broken link...">let us know</ReportIssue>.
             </p>
             <p>Otherwise, perhaps a quick search may help?</p>
             <SearchBar />

@@ -6,21 +6,20 @@ import OfficeMap from '../../components/OfficeMap';
 
 function SupportCard() {
   return (
-    <div className='card'>
+    <div className="card">
       <div class="card__header">
         <h2>Already using PlaceOS?</h2>
       </div>
       <div class="card__body">
         <p>
-          In need of new functionality, or is something not quite
-          working right?
+          In need of new functionality, or is something not quite working right?
         </p>
       </div>
       <div class="card__footer">
         <p>
           <a
-            className='button button--primary button--block'
-            href='https://support.place.technology'>
+            className="button button--primary button--block"
+            href="https://support.place.technology">
             Let us help
           </a>
         </p>
@@ -36,13 +35,13 @@ function SupportCard() {
 
 function Contact() {
   return (
-    <Layout title='Contact'>
-      <div className='container padding-vert--lg'>
+    <Layout title="Contact">
+      <div className="container padding-vert--lg">
         <header>
           <h1 className="pageTitle">Let's chat.</h1>
         </header>
         <main>
-          <div className='row'>
+          <div className="row">
             <div className={classnames('col', styles.sales)}>
               <OfficeMap />
               <p>
@@ -51,8 +50,8 @@ function Contact() {
                 can VC from a timezone that works for you.
               </p>
               <a
-                className='button button--primary button--lg'
-                href='mailto:sales@place.technology'>
+                className="button button--primary button--lg"
+                href="mailto:sales@place.technology">
                 Email us
               </a>
             </div>
