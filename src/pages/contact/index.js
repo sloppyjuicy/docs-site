@@ -17,13 +17,15 @@ function SupportCard() {
         </p>
       </div>
       <div class="card__footer">
-        <a
-          className='button button--primary button--block'
-          href='https://support.place.technology'>
-          Let us help
-        </a>
         <p>
-          If you are in AU you can also call us:
+          <a
+            className='button button--primary button--block'
+            href='https://support.place.technology'>
+            Let us help
+          </a>
+        </p>
+        <p>
+          If you are in Australia you can also call us:
           <a href="tel:1800717700"> 1800&nbsp;717&nbsp;700 </a>
           <small>(Mon-Fri 08:00-18:00 AEDST)</small>.
         </p>
