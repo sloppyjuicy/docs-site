@@ -13,6 +13,7 @@
     "@docusaurus/core": "^2.0.0-alpha.54",
     "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "classnames": "^2.2.6",
+    "placeos-docs": "git://github.com/placeos/docs.git#intro",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-simple-maps": "^2.0.0",
