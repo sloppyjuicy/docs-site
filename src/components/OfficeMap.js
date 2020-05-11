@@ -13,9 +13,9 @@ const markers = [
   {name: 'New York', coordinates: [-74.006, 40.7128]},
 ];
 
-const OfficeMap = () => {
+const OfficeMap = ({className}) => {
   return (
-    <ComposableMap projection="geoMercator" width="1000">
+    <ComposableMap className={className} projection="geoMercator" width="1000">
       <Geographies geography={geoUrl}>
         {({geographies}) =>
           geographies.map((geo) => (
