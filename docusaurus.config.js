@@ -142,8 +142,7 @@ module.exports = {
         docs: {
           path: 'node_modules/placeos-docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/placeos/docs/edit/master/',
+          editUrl: 'https://github.com/placeos/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
