@@ -21,7 +21,7 @@ function Contact() {
               </p>
               <a
                 className="button button--primary button--lg"
-                href="mailto:sales@place.technology">
+                href="mailto:hello@place.technology">
                 Email us
               </a>
               <OfficeMap className="padding-vert--lg" />
