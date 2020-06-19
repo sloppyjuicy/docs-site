@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -54,7 +54,7 @@ function Home() {
   return (
     <Layout description="A software stack for buildings.">
       <main
-        className={classnames('hero', styles.heroBanner)}
+        className={clsx('hero', styles.heroBanner)}
         style={{'--bg-image': `url('${randBg()}')`}}>
         <div className="container">
           <h1 className="hero__title">
@@ -62,7 +62,7 @@ function Home() {
           </h1>
           <div className={styles.buttons}>
             <Link
-              className={classnames(
+              className={clsx(
                 'button button--outline button--primary button--lg',
                 styles.getStarted,
               )}

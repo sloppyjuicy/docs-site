@@ -10,13 +10,13 @@
     "prettier": "prettier --config .prettierrc --write \"src/**/*.{js,ts}\""
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.56",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.56",
+    "@docusaurus/core": "^2.0.0-alpha.58",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "classnames": "^2.2.6",
     "placeos-docs": "git://github.com/placeos/docs.git#intro",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-simple-maps": "^2.0.0",
+    "react-simple-maps": "^2.1.2",
     "react-text-loop": "^2.3.0"
   },
   "browserslist": {

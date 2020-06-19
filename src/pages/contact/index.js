@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import styles from './styles.module.css';
 import OfficeMap from '@site/src/components/OfficeMap';
 
@@ -13,7 +13,7 @@ function Contact() {
         </header>
         <main>
           <div className="row">
-            <div className={classnames('col', styles.sales)}>
+            <div className={clsx('col', styles.sales)}>
               <p>
                 We have offices in Sydney, Brisbane, Melbourne, Hong Kong,
                 London and New York. If you're not in one of these cities, we
@@ -26,7 +26,7 @@ function Contact() {
               </a>
               <OfficeMap className="padding-vert--lg" />
             </div>
-            <div className={classnames('col col--4', styles.support)}>
+            <div className={clsx('col col--4', styles.support)}>
               <h2>Already using PlaceOS?</h2>
               <p>
                 In need of new functionality, or is something not quite working right?
