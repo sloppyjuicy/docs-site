@@ -1,4 +1,4 @@
 [submodule "docs"]
 	path = docs
-	url = git@github.com:placeos/docs.git
+	url = https://github.com/placeos/docs.git
 	branch = master
