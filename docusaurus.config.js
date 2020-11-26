@@ -2,6 +2,8 @@ module.exports = {
   title: 'PlaceOS',
   url: 'https://docs.placeos.com',
   baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'placeos',
   projectName: 'docs-site',
