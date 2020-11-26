@@ -1,5 +1,5 @@
 module.exports = {
   docs: [
-    'README',
+    'key-concepts/drivers',
   ],
 };
