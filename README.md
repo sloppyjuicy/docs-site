@@ -1,31 +1,33 @@
-# Place Technology Website
+# PlaceOS Docs Site
 
-This repository contains the public website, docs renderer, blog tools and general internet pressence for Place Technology, the makers of PlaceOS.
+This repository contains docs renderer and associated tooling behind [docs.placeos.com](https://docs.placeos.com).
 
 It builds on [Docusaurus 2](https://v2.docusaurus.io/).
 
-Content not found under [`src/pages`](./src/pages) will be in:
-- [PlaceOS/docs](https://github.com/PlaceOS/docs)
-- [place-technology/blog](https://github.com/place-technology/blog)
-- [place-technology/podcast](https://github.com/place-technology/podcast)
+Actual docs content can be found within [PlaceOS/docs](https://github.com/PlaceOS/docs).
 
 ### Local Development
 
-Once you have cloned this repo, you'll also need to bring down dependencies:
+Clone both the site, and content:
+```bash
+git clone --recurse-submodules git@github.com:placeos/docs-site.git
 ```
-$ npm install
-```
-This includes the external content repos noted above.
 
-Then:
+You'll need to bring down dependencies:
+```bash
+npm install
 ```
-$ npm start
+
+Finally:
+```bash
+npm start
 ```
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server.
+Most changes are reflected live without having to restart the server.
 
 ### Deployment
 
-Deployment is automated via [Netlify](https://www.netlify.com/).
+Deployment is automated.
 
 Commits to master will trigger a new build to the primary domain.
 

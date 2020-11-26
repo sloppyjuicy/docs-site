@@ -1,12 +1,20 @@
 module.exports = {
   title: 'PlaceOS',
-  url: 'https://place.technology',
+  url: 'https://docs.placeos.com',
   baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'place-technology',
-  projectName: 'website',
+  organizationName: 'placeos',
+  projectName: 'docs-site',
   themeConfig: {
-    defaultDarkMode: true,
+    colorMode: {
+      defaultMode: "dark",
+      switchConfig: {
+        darkIcon: '●',
+        lightIcon: '●',
+      },
+    },
     image: 'img/meta.png',
     announcementBar: {
       id: 'wip',
@@ -21,114 +29,12 @@ module.exports = {
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
       },
-      links: [
-        {
-          to: 'docs',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'left',
-        },
-        {
-          to: 'drivers',
-          activeBasePath: 'drivers',
-          label: 'Drivers',
-          position: 'left',
-        },
-        {
-          to: 'blog',
-          activeBasePath: 'blog',
-          label: 'Blog',
-          position: 'left',
-        },
-        {
-          to: 'podcast',
-          activeBasePath: 'podcast',
-          label: 'Podcast',
-          position: 'left',
-        },
-        {
-          to: 'contact',
-          activeBasePath: 'contact',
-          label: 'Contact',
-          position: 'left',
-        },
+      items: [
       ],
     },
     footer: {
       style: 'light',
       links: [
-        {
-          title: 'Learn',
-          items: [
-            {
-              label: 'Getting Started',
-              to: 'docs/getting-started',
-            },
-            {
-              label: 'Deployment',
-              to: 'docs/deployment',
-            },
-            {
-              label: 'Building Drivers',
-              to: 'docs/drivers',
-            },
-            {
-              label: 'Backoffice',
-              to: 'docs/backoffice',
-            },
-          ],
-        },
-        {
-          title: 'Partner',
-          items: [
-            {
-              label: 'Find a partner',
-              to: 'partners',
-            },
-            {
-              label: 'Become a partner',
-              to: 'partner-program',
-            }
-          ],
-        },
-        {
-          title: 'Follow',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'Podcast',
-              to: 'podcast',
-            },
-            {
-              label: 'Newsletter',
-              to: 'newsletter',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/placeos/',
-            },
-          ],
-        },
-        {
-          title: 'About',
-          items: [
-            {
-              label: 'Company',
-              to: 'company'
-            },
-            {
-              label: 'Careers',
-              to: 'join-us',
-            },
-            {
-              label: 'Contact',
-              to: 'contact',
-            }
-          ],
-        },
       ],
     },
   },
@@ -137,15 +43,18 @@ module.exports = {
   ],
   presets: [
     [
-      require.resolve('@docusaurus/preset-classic'),
+      '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'node_modules/placeos-docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/placeos/docs/edit/master/',
+          include: ['**/!(README).md', '**/*.mdx'],
         },
+        blog: false,
+        pages: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       },
     ],
