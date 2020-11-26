@@ -80,6 +80,7 @@ module.exports = {
           editUrl: 'https://github.com/placeos/docs/edit/master/',
         },
         blog: false,
+        pages: false,
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
         },
