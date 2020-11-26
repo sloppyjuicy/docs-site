@@ -10,6 +10,10 @@ module.exports = {
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
+      switchConfig: {
+        darkIcon: '●',
+        lightIcon: '●',
+      },
     },
     image: 'img/meta.png',
     announcementBar: {
