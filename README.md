@@ -8,17 +8,22 @@ Actual docs content can be found within [PlaceOS/docs](https://github.com/PlaceO
 
 ### Local Development
 
-Once you have cloned this repo, you'll also need to bring down dependencies:
+Clone both the site, and content:
+```bash
+git clone --recurse-submodules git@github.com:placeos/docs-site.git
+```
+
+You'll need to bring down dependencies:
 ```bash
 npm install
 ```
-This includes the external content repos noted above.
 
-Then:
+Finally:
 ```bash
 npm start
 ```
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server.
+Most changes are reflected live without having to restart the server.
 
 ### Deployment
 
