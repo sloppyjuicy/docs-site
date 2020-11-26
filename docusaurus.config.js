@@ -26,44 +26,11 @@ module.exports = {
         srcDark: 'img/logo_dark.svg',
       },
       items: [
-        {
-          to: 'docs',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'left',
-        },
-        {
-          to: 'drivers',
-          activeBasePath: 'drivers',
-          label: 'Drivers',
-          position: 'left',
-        },
       ],
     },
     footer: {
       style: 'light',
       links: [
-        {
-          title: 'Learn',
-          items: [
-            {
-              label: 'Getting Started',
-              to: 'docs/getting-started',
-            },
-            {
-              label: 'Deployment',
-              to: 'docs/deployment',
-            },
-            {
-              label: 'Building Drivers',
-              to: 'docs/drivers',
-            },
-            {
-              label: 'Backoffice',
-              to: 'docs/backoffice',
-            },
-          ],
-        },
       ],
     },
   },
