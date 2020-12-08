@@ -46,7 +46,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: process.env.DOCS_PATH || 'docs',
+          path: process.env.npm_package_config_docs_path || 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/placeos/docs/edit/master/',
