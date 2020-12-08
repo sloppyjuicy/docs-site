@@ -50,7 +50,7 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/placeos/docs/edit/master/',
-          include: ['**/!(README).md', '**/*.mdx'],
+          include: ['{,!(node_modules)/**/}!(README).md'],
         },
         blog: false,
         pages: false,
