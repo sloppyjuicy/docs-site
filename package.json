@@ -11,6 +11,9 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear"
   },
+  "bin": {
+    "docusaurus": "node_modules/.bin/docusaurus"
+  },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.69",
     "@docusaurus/preset-classic": "2.0.0-alpha.69",
