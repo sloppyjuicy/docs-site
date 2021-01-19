@@ -49,7 +49,11 @@ module.exports = {
           path: process.env.npm_package_config_docs_path || 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          include: ['{,!(node_modules)/**/}!(README).md'],
+          include: [
+            '**/*.md',
+            '**/!(README).md',
+            '!(node_modules)'
+          ],
           showLastUpdateTime: true,
           beforeDefaultRemarkPlugins: [
             require('./src/plugins/remark-tabs.js')
