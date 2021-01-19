@@ -39,13 +39,11 @@ module.exports = () => (tree, file) => {
 
     return [
       u('jsx', `<Tabs defaultValue="${tabs[0].value}" values={[${tabs.map(({label, value}) => `{label: '${label}', value: '${value}'}`).join(',')}]}>`),
-      ...tabs.reduce((nodes, {value, children}) => (
-        nodes.concat([
-          u('jsx', `<TabItem value="${value}">`),
-          ...children,
-          u('jsx', `</TabItem>`)
-        ])
-      ), []),
+      ...tabs.flatMap(({value, children}) => ([
+        u('jsx', `<TabItem value="${value}">`),
+        ...children,
+        u('jsx', `</TabItem>`)
+      ])),
       u('jsx', `</Tabs>`)
     ]
   })
