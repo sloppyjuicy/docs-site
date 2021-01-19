@@ -40,12 +40,13 @@ function parseFrontMatter(path) {
 function generateDocItem(baseDir, docPath) {
   const {
     sidebar_order : order = Infinity,
+    sidebar_hide : hide = false,
     id : docId = path.parse(docPath).name
   } = parseFrontMatter(path.join(baseDir, docPath))
 
   const id = path.join(path.dirname(docPath), docId)
 
-  return { type: 'doc', id, order }
+  return hide ? {} : { type: 'doc', id, order }
 }
 
 function generateCategoryItem(baseDir, categoryPath) {
@@ -54,17 +55,20 @@ function generateCategoryItem(baseDir, categoryPath) {
 
   let label = path.basename(categoryPath)
   let order = Infinity
+  let hide = false
 
   if (introItem) {
     const {
       sidebar_category_label = label,
-      sidebar_category_order = order
+      sidebar_category_order = order,
+      sidebar_category_hide = hide
     } = parseFrontMatter(path.join(baseDir, `${introItem}.md`))
     label = sidebar_category_label
     order = sidebar_category_order
+    hide = sidebar_category_hide
   }
 
-  return { type: 'category', label, order, items }
+  return hide ? {} : { type: 'category', label, order, items }
 }
 
 function generateItems({ baseDir, sourceDir }) {
