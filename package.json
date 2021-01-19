@@ -26,7 +26,8 @@
     "mdast-zone": "^4.0.1",
     "placeos-docs": "github:placeos/docs",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "remark-abbr": "^1.4.0"
   },
   "browserslist": {
     "production": [

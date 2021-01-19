@@ -58,6 +58,9 @@ module.exports = {
           beforeDefaultRemarkPlugins: [
             require('./src/plugins/remark-tabs.js')
           ],
+          remarkPlugins: [
+            require('remark-abbr')
+          ],
         },
         blog: false,
         pages: false,
