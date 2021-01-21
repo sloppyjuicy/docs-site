@@ -52,6 +52,7 @@ module.exports = {
           include: [
             '**/*.md',
             '**/!(README).md',
+            '!(README).md',
             '!(node_modules)'
           ],
           showLastUpdateTime: true,
