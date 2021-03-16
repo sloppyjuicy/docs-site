@@ -39,12 +39,15 @@ function parseFrontMatter(path) {
 
 function generateDocItem(baseDir, docPath) {
   const {
-    sidebar_order : order = Infinity,
+    sidebar_order : frontmatter_order = Infinity,
     sidebar_hide : hide = false,
-    id : docId = path.parse(docPath).name
+    id : docId = path.parse(docPath).name,
+    slug = undefined
   } = parseFrontMatter(path.join(baseDir, docPath))
 
   const id = path.join(path.dirname(docPath), docId)
+
+  const order = slug == './' ? -Infinity : frontmatter_order
 
   return hide ? {} : { type: 'doc', id, order }
 }
