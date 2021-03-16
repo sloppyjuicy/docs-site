@@ -30,6 +30,10 @@ module.exports = {
         srcDark: 'img/logo_dark.svg',
       },
       items: [
+        { to: 'overview', label: 'Overview' },
+        { to: 'how-to', label: 'How-To' },
+        { to: 'tutorial', label: 'Tutorials' },
+        { to: 'reference', label: 'Reference' }
       ],
     },
     footer: {

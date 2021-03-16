@@ -97,6 +97,9 @@ function generateItems({ baseDir, sourceDir }) {
     .map(({ id, order, ...item }) => id || item)
 }
 
-const sidebar = generateItems({ baseDir: content_path, sourceDir: '' });
-
-module.exports = { sidebar };
+module.exports = {
+  overview: generateItems({ baseDir: content_path, sourceDir: 'overview' }),
+  how_to: generateItems({ baseDir: content_path, sourceDir: 'how-to' }),
+  tutorials: generateItems({ baseDir: content_path, sourceDir: 'tutorial' }),
+  reference: generateItems({ baseDir: content_path, sourceDir: 'reference' })
+};
