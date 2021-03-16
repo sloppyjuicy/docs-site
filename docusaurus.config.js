@@ -50,10 +50,8 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           include: [
-            '**/*.md',
-            '**/!(README).md',
-            '!(README).md',
-            '!(node_modules)'
+            './!(README).md',
+            './!(node_modules)/**/!(README).md'
           ],
           showLastUpdateTime: true,
           beforeDefaultRemarkPlugins: [
