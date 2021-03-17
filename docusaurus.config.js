@@ -36,6 +36,7 @@ module.exports = {
         { to: 'reference', label: 'Reference' }
       ],
     },
+    hideableSidebar: true,
     footer: {
       style: 'light',
       links: [
