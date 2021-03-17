@@ -1,8 +1,7 @@
 @font-face {
-  font-family: 'Young';
-  src: local('Young'), local('Young-Regular'),
-       url('young.woff2') format('woff2'),
-       url('young.woff') format('woff');
+  font-family: 'Axiforma';
+  src: local('Axiforma'), local('Axiforma Regular'),
+       url('axiforma.woff') format('woff');
 }
 
 @font-face {
