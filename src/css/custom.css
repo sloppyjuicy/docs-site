@@ -23,8 +23,8 @@
 }
 
 html[data-theme='dark'] {
-  --ifm-background-color: #0a0d2e;
-  --ifm-background-surface-color: #0a0d2e;
+  --ifm-background-color: #161939;
+  --ifm-background-surface-color: #161939;
   --ifm-heading-color: inherit;
   --img-overlay-colour: rgba(10, 13, 46, 0.95)
 }
