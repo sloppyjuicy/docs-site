@@ -42,6 +42,12 @@ module.exports = {
       links: [
       ],
     },
+    prism: {
+      additionalLanguages: [
+        'ruby',
+        'crystal'
+      ],
+    },
   },
   stylesheets: [
     '/fonts/fonts.css'
