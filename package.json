@@ -1,6 +1,5 @@
 {
   "name": "placeos-docs-site",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -20,16 +19,19 @@
     "docusaurus": "node_modules/.bin/docusaurus"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.71",
-    "@docusaurus/preset-classic": "2.0.0-alpha.71",
+    "@docusaurus/core": "2.0.0-alpha.75",
+    "@docusaurus/preset-classic": "2.0.0-alpha.75",
+    "@svgr/webpack": "^5.5.0",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
+    "file-loader": "^6.2.0",
     "mdast-util-heading-range": "^2.1.5",
     "mdast-zone": "^4.0.1",
-    "placeos-docs": "github:placeos/docs",
+    "placeos-docs": "placeos/docs",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "remark-abbr": "^1.4.0"
+    "remark-abbr": "^1.4.0",
+    "url-loader": "^4.1.1"
   },
   "browserslist": {
     "production": [
