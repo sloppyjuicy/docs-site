@@ -66,8 +66,9 @@ module.exports = {
     '/fonts/fonts.css'
   ],
   plugins: [
+    './src/plugins/webpack.js',
     [
-      require.resolve('@cmfcmf/docusaurus-search-local'),
+      '@cmfcmf/docusaurus-search-local',
       {
         docsRouteBasePath: '/',
       }
@@ -78,12 +79,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: process.env.npm_package_config_docs_path || 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           include: [
-            './!(README).md',
-            './!(node_modules)/**/!(README).md'
+            '**/!(README).md'
           ],
           showLastUpdateTime: true,
           beforeDefaultRemarkPlugins: [
