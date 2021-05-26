@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "update:docs": "npm update placeos-docs",
+    "update:docs": "npm i placeos-docs",
     "prestart": "npm run clear",
     "start": "docusaurus start",
     "prebuild": "npm run clear",
@@ -29,7 +29,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "placeos-docs": "placeos/docs"
+    "placeos-docs": "github:placeos/docs"
   },
   "browserslist": {
     "production": [
