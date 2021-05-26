@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "update:docs": "npm update placeos-docs",
+    "prestart": "npm run clear",
     "start": "docusaurus start",
+    "prebuild": "npm run clear",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
