@@ -86,7 +86,6 @@ module.exports = {
             './!(README).md',
             './!(node_modules)/**/!(README).md',
           ],
-          showLastUpdateTime: true,
           beforeDefaultRemarkPlugins: [
             require('./src/plugins/remark-tabs.js')
           ],
