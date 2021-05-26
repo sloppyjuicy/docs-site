@@ -79,10 +79,12 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: process.env.DOCS_PATH || 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           include: [
-            '**/!(README).md'
+            './!(README).md',
+            './!(node_modules)/**/!(README).md',
           ],
           showLastUpdateTime: true,
           beforeDefaultRemarkPlugins: [
