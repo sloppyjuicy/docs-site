@@ -18,7 +18,7 @@ module.exports = {
     image: 'img/meta.png',
     announcementBar: {
       id: 'wip',
-      content: "<b>PlaceOS</b> is currently in early preview. If you are stuck and in need of a human, come say hi at <a href=\"mailto:support@place.technology\">support@place.technology</a>",
+      content: "Documents here are a living resource. If you have a question not currently covered, please email <a href=\"mailto:support@placeos.com\">support@placeos.com</a> so that we can help.",
       backgroundColor: '#24Cdfd',
       textColor: '#0a0d2e',
     },
