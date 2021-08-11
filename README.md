@@ -28,3 +28,15 @@ Deployment is automated.
 Commits to default branch will trigger a new build to the primary domain.
 
 PR's each receive their own preview URL ahead of deployment.
+
+### Mermaid Diagrams
+
+To insert mermaid diagrams, use the following code blocks in .md or .mdx
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
