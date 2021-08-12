@@ -90,7 +90,8 @@ module.exports = {
             require('./src/plugins/remark-tabs.js')
           ],
           remarkPlugins: [
-            require('remark-abbr')
+            require('remark-abbr'),
+            require('mdx-mermaid')
           ],
         },
         blog: false,
